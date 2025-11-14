@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario LocalStorage</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuario</h1>
+        <form> 
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <span id="error-nombre" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="error-email" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="1">
+                <span id="error-edad" class="error"></span>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn btn-guardar" id="btnGuardar">Guardar</button>
+                <button type="button" class="btn btn-ver" id="btnVer">Ver Datos</button>
+                <button type="button" class="btn btn-limpiar" id="btnLimpiar">Limpiar Formulario</button>
+                <button type="button" class="btn btn-borrar" id="btnBorrar">borrar Datos</button>
+            </div>
+        </form>
+
+        <div id="resultado">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

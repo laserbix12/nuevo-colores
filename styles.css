@@ -1,0 +1,122 @@
+/* Estilos Generales y Contenedor */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Estilos de Formulario (Inputs y Labels) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilos de Botones */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    flex-grow: 1;
+    transition: background-color 0.3s ease;
+}
+
+.btn-guardar { background-color: #007bff; }
+.btn-guardar:hover { background-color: #0056b3; }
+
+.btn-ver { background-color: #17a2b8; }
+.btn-ver:hover { background-color: #117a8b; }
+
+.btn-limpiar { background-color: #6c757d; }
+.btn-limpiar:hover { background-color: #5a6268; }
+
+.btn-borrar { background-color: #dc3545; }
+.btn-borrar:hover { background-color: #c82333; }
+
+
+/* Estilos de Errores y Resultados (Importados del <style>) */
+
+/* Estilos para que las alertas de error se vean */
+.error {
+    color: #dc3545; /* Rojo de alerta */
+    font-size: 0.9em;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+/* Estilos para el panel de resultado */
+#resultado {
+    margin-top: 30px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+    display: none; /* Inicialmente oculto por defecto */
+}
+
+.usuario {
+    padding: 10px 0;
+}
+
+.btn-borrar-individual {
+    background-color: #ffc107; /* Amarillo para borrar individualmente */
+    color: #212529;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+.btn-borrar-individual:hover {
+    background-color: #e0a800;
+}
