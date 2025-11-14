@@ -129,10 +129,16 @@ function mostrarUsuariosAlCargar() {
     }
 }
 
-
 // ==== BOTÓN VER/OCULTAR DATOS ====
+// CORRECCIÓN: Comprobar si hay usuarios antes de intentar mostrar
 btnVer.addEventListener("click", () => {
   const resultado = document.getElementById("resultado");
+  const usuariosGuardados = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+  if (usuariosGuardados.length === 0) {
+    alert("⚠ No hay datos que mostrar.");
+    return;
+  }
 
   if (resultado.style.display === "block") {
     // Ocultar lista
@@ -140,7 +146,7 @@ btnVer.addEventListener("click", () => {
     resultado.innerHTML = "";
     btnVer.textContent = "Ver Datos";
   } else {
-    mostrarUsuarios(); // Mostrar lista
+    mostrarUsuarios(); // Mostrar lista (sabemos que hay datos)
   }
 });
 
